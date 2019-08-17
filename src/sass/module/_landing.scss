@@ -1,0 +1,79 @@
+.header-wrapper {
+  min-height: 70px;
+  box-shadow: 0 1px rgba(0,0,0,.2);
+  z-index: 1000000;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  width: 100%;
+  max-width: 1680px;
+
+  .main-header {
+    padding: 10px;
+
+    .account-toggle {
+      background: none;
+      border: none;
+      outline: none;
+      padding: 0;
+      position: relative;
+
+      .account-toggle-icon {
+        position: relative;
+        display: inline-block;
+
+        .account-label {
+          display: none;
+          padding-left: 10px;
+
+          @media only screen and (min-width: 768px) {
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    .account-icon {
+      background-position: -130px -534px;
+    }
+
+    .account-cart {
+      background-position: -468px -310px;
+    }
+
+    .item-number {
+      display: inline-block;
+      padding-right: 10px;
+
+      @media only screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    .img-src {
+      display: inline-block;
+      background-image: url(../../assets/img/sprites-main.png);
+      background-repeat: no-repeat;
+      background-size: 616px auto;
+      height: 26px;
+      width: 26px;
+      vertical-align: bottom;
+    }
+
+    .logo-container {
+      color: #f86932;
+      text-decoration: none;
+      transition: color .1s ease;
+
+      .logo-img {
+        background-repeat: no-repeat;
+        background-size: 0 0;
+        display: block;
+        height: 30px;
+        margin: 4px auto 6px;
+        overflow: hidden;
+        width: 90px;
+      }
+    }
+  }
+}

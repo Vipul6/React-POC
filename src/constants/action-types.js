@@ -1,0 +1,12 @@
+// Bootstrap action TYPES
+const GET_SEARCH = 'GET_SEARCH';
+const GET_FOOD_SUCCESS = 'GET_FOOD_SUCCESS';
+const GET_FOOD_FAILURE = 'GET_FOOD_FAILURE';
+const ADD_TO_CART = 'ADD_TO_CART';
+
+export default {
+  GET_SEARCH,
+  GET_FOOD_SUCCESS,
+  GET_FOOD_FAILURE,
+  ADD_TO_CART
+};

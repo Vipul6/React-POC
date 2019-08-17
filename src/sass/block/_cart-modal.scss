@@ -1,0 +1,160 @@
+.overlay {
+  position: fixed;
+  padding: 10px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: visible;
+  opacity: 1;
+  z-index: 1000000;
+}
+.glypho {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+}
+.popup {
+  position:fixed;
+  top:50%;
+  left:50%;
+  box-sizing:border-box;
+  transform: translate(-50%,-50%);
+  width:600px;
+  max-width:calc(100% - 20px);
+  max-height:calc(100% - 20px);
+
+  @media only screen and (min-width: 768px){
+    width: 500px;
+    max-width: calc(100% - 80px);
+    max-height: calc(100% - 80px);
+  }
+  .close {
+    position: absolute;
+    left: 10px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+
+.cart-item-details {
+  //background: #FFFFFF;
+  border-radius: 5px;
+  overflow:auto;
+  max-height: calc(100vh - 50px);
+  .item-image {
+    //border-radius: 5px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    width: 100%;
+
+    @media only screen and (min-width: 768px){
+      height: 200px;
+    }
+  }
+
+  .item-description {
+    background: rgb(255, 255, 255);
+    text-align: left;
+    padding: 10px;
+
+    h4 {
+      font-weight: bold;
+    }
+
+    p {
+      color: #A8A9AB;
+      margin-bottom: 0; 
+    }
+  }
+
+  .item-quantity {
+    p {
+      border: 1px solid #D5D5D5;
+      color: #A8A9AB;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 8px;
+      margin-bottom: 0;
+      text-align: justify;
+    }
+
+    .quantity, .instructions {
+      background: #E6E6E6;
+    }
+
+    .add-remove-item {
+      background: #FFFFFF;
+      padding: 10px;
+      position: relative;
+      height: 50px;
+
+      span {
+        font-size: 25px;
+      }
+
+      .add-item {
+        background-image: url(../../assets/img/sprites-main.png);
+        background-repeat: no-repeat;
+        background-size: 616px auto;
+        background-color: none;
+        border: none;
+        display: inline-block;
+        height: 26px;
+        width: 26px;
+        background-position: -375px -474px;
+      }
+
+      .remove-item {
+        background-image: url(../../assets/img/sprites-main.png);
+        background-repeat: no-repeat;
+        background-size: 616px auto;
+        background-color: none;
+        border: none;
+        display: inline-block;
+        height: 26px;
+        width: 26px;
+        background-position: -457px -474px;
+      }
+    }
+  }
+
+  .add-note {
+    background: #FFFFFF;
+    border: 1px solid #D5D5D5;
+    color: #A8A9AB;
+    text-align: left;
+    padding: 8px;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .extra-pad {
+    height: 100px;
+    background: #E6E6E6;
+    display: none;
+  }
+
+  .add-to-cart-btn {
+    background: #FE7F28;
+    padding: 20px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    button {
+      color: #fff;
+      font-weight: bold;
+      font-size: 18px;
+      background: none;
+      border: none;
+    }
+
+    .price-tag {
+      color: #925F3A;
+    }
+  }
+}
